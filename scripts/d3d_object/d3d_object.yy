@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"d3d_object",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"d3d_object",
+  "parent":{
+    "name":"d3d_physics",
+    "path":"folders/lib/D3D/scripts/d3d_physics.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

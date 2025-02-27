@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ctrl_startd3d",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ctrl_startd3d",
+  "parent":{
+    "name":"ctrl",
+    "path":"folders/Arena/Object/ctrl.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

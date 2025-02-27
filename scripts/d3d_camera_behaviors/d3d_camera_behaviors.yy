@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"d3d_camera_behaviors",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"d3d_camera_behaviors",
+  "parent":{
+    "name":"d3d_camera",
+    "path":"folders/lib/D3D/scripts/d3d_camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

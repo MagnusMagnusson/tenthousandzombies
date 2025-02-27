@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_octtree",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_octtree",
+  "parent":{
+    "name":"util",
+    "path":"folders/lib/Scripts/util.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,1 @@
+draw_text(128,16,"loading "+string(floor(100 * (ind / len)))+"%")

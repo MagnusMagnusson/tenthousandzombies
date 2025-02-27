@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"d3d_model_manager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"d3d_model_manager",
+  "parent":{
+    "name":"models",
+    "path":"folders/lib/D3D/models.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

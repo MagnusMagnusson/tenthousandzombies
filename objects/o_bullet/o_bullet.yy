@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
   "%Name":"o_bullet",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"o_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Object",
-    "path":"folders/Arena/Object.yy",
+    "name":"player",
+    "path":"folders/Game/Objects/player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_bullet",
+    "path":"sprites/s_bullet/s_bullet.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

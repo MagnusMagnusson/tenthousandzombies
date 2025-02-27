@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"d3d_camera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"d3d_camera",
+  "parent":{
+    "name":"d3d_camera",
+    "path":"folders/lib/D3D/scripts/d3d_camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
