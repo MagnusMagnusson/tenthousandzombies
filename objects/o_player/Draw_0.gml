@@ -1,4 +1,4 @@
-draw_self()
+//draw_self()
 
 var w = display_get_gui_width();
 var h = display_get_gui_height();
@@ -13,3 +13,4 @@ var doffset = 33;
 if(theta < -20){
 	doffset -= 2*(20 + theta)
 } 
+model.draw_ext(x,y,1,0,0,0, scale, scale, 1);

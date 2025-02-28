@@ -1,2 +1,2 @@
-model = ModelManager().get("cube", false);
-z = -12;
+model = ModelManager().get("humanoid", false);
+z  = 0;

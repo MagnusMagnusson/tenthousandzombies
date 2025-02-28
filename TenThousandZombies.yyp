@@ -41,6 +41,12 @@
     {"$GMFolder":"","%Name":"Misc","folderPath":"folders/Misc.yy","name":"Misc","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"humanoid.mtl","CopyToMask":-1,"filePath":"datafiles/assets/models","name":"humanoid.mtl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"humanoid.obj","CopyToMask":-1,"filePath":"datafiles/assets/models","name":"humanoid.obj","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"sizetest.mtl","CopyToMask":-1,"filePath":"datafiles/assets/models","name":"sizetest.mtl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"sizetest.obj","CopyToMask":-1,"filePath":"datafiles/assets/models","name":"sizetest.obj","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"sizetest.mtl","CopyToMask":-1,"filePath":"datafiles/models","name":"sizetest.mtl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"sizetest.obj","CopyToMask":-1,"filePath":"datafiles/models","name":"sizetest.obj","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"README.txt","CopyToMask":-1,"filePath":"datafiles","name":"README.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,

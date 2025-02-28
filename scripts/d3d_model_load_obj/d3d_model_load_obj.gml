@@ -1,7 +1,7 @@
 
 /// @param mtl-name
 function d3d_load_object(argument0, argument1) {
-
+	show_debug_message("Opening model '"+argument0+"'");
 	// Open the file
 	var filename = argument0;
 	var mtlname = argument1;
