@@ -1,6 +1,9 @@
 
 var sped = 1;
 
+if(shotDelay > 0){
+	shotDelay--;
+}
 
 var c = noone;
 with(o_first_person_camera) if following == other.id {

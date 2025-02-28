@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_ctrl_gameplay",
   "parent":{
-    "name":"ctrl",
-    "path":"folders/Arena/Object/ctrl.yy",
+    "name":"extrascripts",
+    "path":"folders/Arena/Object/controllers/extrascripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

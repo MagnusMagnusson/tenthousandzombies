@@ -10,8 +10,8 @@
   "name":"o_smoke",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Game/Objects/player.yy",
+    "name":"effects",
+    "path":"folders/Arena/Object/effects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -11,8 +11,8 @@
   "name":"o_ctrl",
   "overriddenProperties":[],
   "parent":{
-    "name":"ctrl",
-    "path":"folders/Arena/Object/ctrl.yy",
+    "name":"controllers",
+    "path":"folders/Arena/Object/controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
