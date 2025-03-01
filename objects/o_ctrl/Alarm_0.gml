@@ -1,0 +1,2 @@
+sortProduceSpawners();
+newRound(true);

@@ -7,19 +7,81 @@ setDifficulty = function(difficulty){
 }
 
 getScore = function(){
-	return ceil(difficultyScaling[difficulty] * (zombiesKilled * 10 + producePicked * 0.1 + 2*timeBonus + bonusSkips * 150 + 220 * (zombiesKilled div 100)));
+	return ceil(difficultyScaling[difficulty] * (zombiesKilled * 10 + producePicked + 2*timeBonus + bonusSkips * 200 + 246 * level));
 }
 
 killZombie = function(){
 	zombiesKilled++;
 	if(zombiesKilled >= killsToNextLevel){
-		show_message("NEW LEVEL");
 		level++;
+		newRound();
+	}
+}
+
+newRound = function(first = false){
 		lastLevelKillTotal = zombiesKilled;
-		var rawKillIncrease = round(10000 * ((10 + 5*level) / 22945));
+		var rawKillIncrease = round(10000 * ((10 + 5*level) / 6670));
 		killsToNextLevel = zombiesKilled + clamp(rawKillIncrease, 10, 10000 - zombiesKilled);
-		timeBonus += clamp(time, 0, 100);
+		if(!first){
+			timeBonus += clamp(time, 0, 100);
+		}
+		spawnProduce();
 		time = 150;
+}
+
+lastProduce = -1;
+spawnerGroups = [];
+spawnProduce = function(){
+	var produce = lastProduce;
+	while(produce == lastProduce){
+		produce = irandom(7);
+	}
+	
+	with(o_produceSpawner){
+		if(ind == produce){
+			spawn();
+		}
+	}
+	lastProduce = produce;
+}
+
+sortProduceSpawners = function(){
+	//Broad
+	var lowX, lowY, highX, highY;
+	lowX = room_width;
+	lowY = room_height;
+	highX = 0;
+	highY = 0;
+	var allSpawners = [];
+	with(o_produceSpawner){
+		show_debug_message("Hello?");
+		lowX = min(x, lowX);
+		lowY = min(y, lowY);
+		highX = max(x, highX);
+		highY = max(y, highY);
+		array_push(allSpawners, id);
+		ind = 0;
+	}
+	
+	show_debug_message(string("Spawner boundaries at {0} {1} {2} {3}", lowX, highX, lowY, highY));
+	
+	highX += 1;
+	highY += 1;
+	
+	array_sort(allSpawners, function(a,b) {
+		return a.y - b.y;
+	});
+	
+	for(var i = 0; i < array_length(allSpawners) div 2; i++){
+		allSpawners[i].ind = 4; 
+	}
+		
+	array_sort(allSpawners, function(a,b) {
+		return a.x - b.x;
+	});	
+	
+	for(var i = 0; i < array_length(allSpawners); i++){
+		allSpawners[i].ind += 4*i div (array_length(allSpawners)); 
 	}
 }
 
@@ -49,3 +111,5 @@ for(var j = 0; j <= room_height; j += 10){
 		instance_create_layer(room_width, j, "o_world", o_wall);
 	}
 }
+
+alarm[0] = 2;

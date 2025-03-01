@@ -1,0 +1,1 @@
+model.draw(x,y, 10, 0, 0, spin, 1);
