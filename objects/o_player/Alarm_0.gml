@@ -1,0 +1,1 @@
+o_ctrl.hp -= o_ctrl.maxHp / 10;

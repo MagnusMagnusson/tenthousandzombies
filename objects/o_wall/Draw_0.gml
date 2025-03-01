@@ -1,11 +1,9 @@
 draw_self();
-if(global.debug && !is_undefined(model)){
-	var w = image_xscale * sprite_get_width(s_wall);
-	var h = image_yscale * sprite_get_height(s_wall)
+if(!is_undefined(model)){
 	model.draw_ext(
-		x - w/2,y - h/2,z,
+		x,y,0,
 		0,0,0,
-		w,h,height
+		10, 10, 5
 	);
 } else {
 	model = ModelManager().get("cube", false);

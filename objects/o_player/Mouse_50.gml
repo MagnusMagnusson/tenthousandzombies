@@ -3,7 +3,6 @@ var gun = o_ctrl.gun;
 if(game_active() && releasedTrigger && shotDelay <= 0){
 	releasedTrigger = gun.automatic;
 	shotDelay = gun.rate;
-	show_debug_message("YES!");
 	var spread = degtorad(gun.spread);
 	var accuracy = degtorad(gun.accuracy);
 	var bulletCount = gun.bullets;
@@ -35,8 +34,4 @@ if(game_active() && releasedTrigger && shotDelay <= 0){
 		b.z = z + 10;
 	}
 
-} else {
-	show_debug_message("No!");
-	show_debug_message(releasedTrigger);
-	show_debug_message(shotDelay);
-}
+} 

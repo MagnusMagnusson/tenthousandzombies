@@ -1,5 +1,4 @@
 function Model(obj_file, mtl_file, buffer = undefined) constructor{
-	show_debug_message(buffer)
 	if(!is_undefined(buffer)){		
 		model = buffer;
 	} else {

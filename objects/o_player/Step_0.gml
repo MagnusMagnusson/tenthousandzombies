@@ -41,13 +41,18 @@ if(!o_camera.locked){
 	}
 
 	x += dx;
-	/*if(d3d_collision(o_world.collision_tree, id, o_wall)){
+	if(place_meeting(x, y, o_wall)){
 		x -= dx;
-	}*/
+	}
 
 	y += dy;
 
-	/*if(d3d_collision(o_world.collision_tree, id, o_wall)){
+	if(place_meeting(x, y, o_wall)){
 		y -= dy;
-	}*/
+	}
+}
+
+
+if(alarm[0] <= -1 && (x < 0 || x > room_width || y < 0 || y > room_height)){
+	alarm[0] = 60;
 }

@@ -9,8 +9,8 @@
   "name":"o_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"env",
-    "path":"folders/Game/Objects/env.yy",
+    "name":"enviroment",
+    "path":"folders/Arena/Object/enviroment.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -8,7 +8,10 @@ function ctrl_gameplay(){
 	zombieLevel = 5;
 	level = 0;
 	killsToNextLevel = 10;
+	lastLevelKillTotal = 0;
 	bonusSkips = 0;
+	
+	time = 150;
 
 	paused = false;
 	storeOpen = false;
