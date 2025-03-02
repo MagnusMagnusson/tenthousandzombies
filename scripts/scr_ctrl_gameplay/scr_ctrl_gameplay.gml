@@ -11,6 +11,7 @@ function ctrl_gameplay(){
 	lastLevelKillTotal = 0;
 	bonusSkips = 0;
 	gold = 0;
+	extraScore = 0;
 	immune = 0;
 	
 	time = 150;

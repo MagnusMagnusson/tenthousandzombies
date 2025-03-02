@@ -1,11 +1,11 @@
 function Item(name, description, icon, cost = 10, onPurchase = undefined, onRoundStart = undefined, onRoundEnd = undefined) constructor{
-	name = name;
-	icon = icon;
-	onPurchase = onPurchase;
-	onRoundStart = onRoundStart;
-	onRoundEnd = onRoundEnd;
-	cost = cost;
-	bought = false;
+	self.name = name;
+	self.icon = icon;
+	self.onPurchase = onPurchase;
+	self.onRoundStart = onRoundStart;
+	self.onRoundEnd = onRoundEnd;
+	self.cost = cost;
+	self.bought = false;
 	
 	static canPurchase = function(){
 		return !bought && o_ctrl.gold >= cost;
@@ -30,6 +30,6 @@ function Item(name, description, icon, cost = 10, onPurchase = undefined, onRoun
 }
 
 function Effect(effect, duration = 100) constructor{
-	effect = effect;
-	duration = duration;
+	self.effect = effect;
+	self.duration = duration;
 }

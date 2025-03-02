@@ -9,7 +9,7 @@ hurt = function(amount){
 }
 
 getScore = function(){
-	return ceil(difficultyScaling[difficulty] * (zombiesKilled * 10 + producePicked + 2*timeBonus + bonusSkips * 200 + 246 * level));
+	return extraScore + ceil(difficultyScaling[difficulty] * (zombiesKilled * 10 + producePicked + 2*timeBonus + bonusSkips * 200 + 246 * level));
 }
 
 killZombie = function(){
@@ -24,6 +24,7 @@ killZombie = function(){
 
 	spawnStore = function(){
 		storeOpen = true;
+		hp = min(maxHp, hp + levelRegen * maxHp);
 		instance_create_layer(0,0, "layer_Store", o_store);
 	
 		for(var i = 0; i < array_length(onRoundEndEffects); i++){
@@ -111,6 +112,56 @@ killZombie = function(){
 	
 		for(var i = 0; i < array_length(allSpawners); i++){
 			allSpawners[i].ind += 4*i div (array_length(allSpawners)); 
+		}
+	}
+	
+	setDifficulty = function(_difficulty){
+		switch(_difficulty){
+			case 0 : {
+				hpRegen = 1;
+				levelRegen = 1;
+				startingWeapon = "Shotgun";
+				difficulty = difficulty;
+				maxHp = max(150, maxHp);
+				healingItems = true;
+				break;
+			}
+			case 1 : {
+				hpRegen = 0.5;
+				levelRegen = 0.5;
+				difficulty = difficulty
+				startingWeapon = "Pistol";
+				maxHp = max(100, maxHp);
+				healingItems = true;
+				break;
+			}
+			case 2 : {
+				hpRegen = 0.25;
+				levelRegen = 0.2;
+				difficulty = difficulty
+				startingWeapon = "Pistol";
+				maxHp = max(100, maxHp);
+				healingItems = true;
+				break;
+			}
+			case 3 : {
+				hpRegen = 0;
+				levelRegen = 1;
+				difficulty = difficulty
+				startingWeapon = "Pistol";
+				maxHp = max(100, maxHp);
+				healingItems = true;
+				break;
+			}
+			case 4 : {
+				hpRegen = 0;
+				levelRegen = 0;
+				difficulty = difficulty
+				startingWeapon = "Shotgun";
+				maxHp = max(200, maxHp);
+				healingItems = false;
+				break;
+			}
 		}
 	}
 }

@@ -1,6 +1,6 @@
 function ctrl_makeguns(){
 	guns = [
-		new Gun("Pistol", 1, 0, 10, 1, false, 6, 6)
+		new Gun("Pistol", 1, 0, 0, 10, 1, false, 6, 6)
 	]
 	gun = 0;
 	
@@ -24,14 +24,14 @@ function ctrl_makeguns(){
 	}
 }
 
-function Gun(name, bullets, spread, damage, rate, automatic, ammo, maxAmmo) constructor {
-	name = name;
-	bullets = bullets;
-	spread = spread;
-	damage = damage;
-	rate =  rate;
-	automatic = automatic;
-	active = active;
-	ammo = ammo;
-	maxAmmo = maxAmmo;
+function Gun(_name, _bullets, _spread, _accuracy, _damage, _rate, _automatic, _ammo, _maxAmmo) constructor {
+	name = _name;
+	bullets = _bullets;
+	accuracy = _accuracy;
+	spread = _spread;
+	damage = _damage;
+	rate =  _rate;
+	automatic = _automatic;
+	ammo = _ammo;
+	maxAmmo =_maxAmmo;
 }

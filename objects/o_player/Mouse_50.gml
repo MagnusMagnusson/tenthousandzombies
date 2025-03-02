@@ -1,4 +1,4 @@
-var gun = o_ctrl.gun;
+var gun = o_ctrl.guns[o_ctrl.gun];
 
 if(game_active() && releasedTrigger && shotDelay <= 0){
 	releasedTrigger = gun.automatic;

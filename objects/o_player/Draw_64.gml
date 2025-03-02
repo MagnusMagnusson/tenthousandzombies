@@ -1,1 +1,1 @@
-draw_text(10,10,z);
+draw_text(10,10, o_ctrl.hp);

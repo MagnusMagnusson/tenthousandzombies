@@ -72,6 +72,7 @@
     {"id":{"name":"o_hurtflash","path":"objects/o_hurtflash/o_hurtflash.yy",},},
     {"id":{"name":"o_levelbar","path":"objects/o_levelbar/o_levelbar.yy",},},
     {"id":{"name":"o_loader","path":"objects/o_loader/o_loader.yy",},},
+    {"id":{"name":"o_main_menu_ctrl","path":"objects/o_main_menu_ctrl/o_main_menu_ctrl.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"o_produce","path":"objects/o_produce/o_produce.yy",},},
     {"id":{"name":"o_produceSpawner","path":"objects/o_produceSpawner/o_produceSpawner.yy",},},
@@ -87,6 +88,7 @@
     {"id":{"name":"Object27","path":"objects/Object27/Object27.yy",},},
     {"id":{"name":"rm_farm","path":"rooms/rm_farm/rm_farm.yy",},},
     {"id":{"name":"rm_loading","path":"rooms/rm_loading/rm_loading.yy",},},
+    {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"d3d_camera_behaviors","path":"scripts/d3d_camera_behaviors/d3d_camera_behaviors.yy",},},
     {"id":{"name":"d3d_camera","path":"scripts/d3d_camera/d3d_camera.yy",},},
     {"id":{"name":"d3d_collision","path":"scripts/d3d_collision/d3d_collision.yy",},},
@@ -122,6 +124,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_loading","path":"rooms/rm_loading/rm_loading.yy",},},
+    {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"rm_farm","path":"rooms/rm_farm/rm_farm.yy",},},
   ],
   "templateType":"game",

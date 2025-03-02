@@ -19,13 +19,13 @@ if(game_active()){
 	switch(mode){
 		case "avoid":{
 			var d = point_direction(ally.x, ally.y, x, y);
-			mp_potential_step_object(x + lengthdir_x(avoidanceDistance, d), y + lengthdir_y(avoidanceDistance, d), 0.5, o_wall);
+			mp_potential_step_object(x + lengthdir_x(avoidanceDistance, d), y + lengthdir_y(avoidanceDistance, d), sped, o_wall);
 			break;
 		}
 		case "hunt":{
 			var d = abs(x - o_player.x) + abs(y - o_player.y);
 			if(d > 20){
-				mp_potential_step_object(o_player.x, o_player.y, 0.5, o_wall);
+				mp_potential_step_object(o_player.x, o_player.y, sped, o_wall);
 			} else {
 				o_ctrl.hurt(damage);
 			}

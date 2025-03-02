@@ -1,10 +1,10 @@
 function Loot(item, weight) constructor{
-	item = item;
-	weight = weight;
+	self.item = item;
+	self.weight = weight;
 }
 
 function ItemPool(items) constructor{
-	items = items;
+	self.items = items;
 	
 	static getRandomItem = function(){
 		var totalWeight = 0;
