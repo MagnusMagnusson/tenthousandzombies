@@ -1,3 +1,4 @@
+draw_set_font(fnt_UI);
 var stepSize = 120;
 var portion = (o_ctrl.zombiesKilled - o_ctrl.lastLevelKillTotal) / (o_ctrl.killsToNextLevel - o_ctrl.lastLevelKillTotal);
 

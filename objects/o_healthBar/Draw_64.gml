@@ -1,3 +1,4 @@
+draw_set_font(fnt_UI);
 var maxHp = 1;
 var hp = 0;
 if(instance_exists(o_ctrl)){

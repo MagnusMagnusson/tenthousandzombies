@@ -10,9 +10,11 @@ function ctrl_gameplay(){
 	killsToNextLevel = 10;
 	lastLevelKillTotal = 0;
 	bonusSkips = 0;
+	gold = 0;
+	immune = 0;
 	
 	time = 150;
-
+	hurtFlash = 0;
 	paused = false;
 	storeOpen = false;
 }

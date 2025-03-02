@@ -1,3 +1,4 @@
+draw_set_font(fnt_UI);
 var digits =  myscore < 1000000 ? 6 : 1 + floor(log10(myscore));
 for(var i = digits - 1; i >= 0; i--){
 	var s = (myscore div power(10, i)) % 10;

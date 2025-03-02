@@ -1,9 +1,16 @@
 ctrl_startd3d();
 ctrl_gameplay();
 difficultyScaling = [0.5, 0.75, 1, 1.5, 2];
+modifiers = [];
+onRoundStartEffects = [];
+onRoundEndEffects = [];
 
-setDifficulty = function(difficulty){
-	
+hurt = function(amount){
+	if(immune <= 0){
+		o_ctrl.hp -= amount;
+		immune = 1;
+		hurtFlash = 1;
+	}
 }
 
 getScore = function(){
@@ -14,19 +21,41 @@ killZombie = function(){
 	zombiesKilled++;
 	if(zombiesKilled >= killsToNextLevel){
 		level++;
-		newRound();
+		timeBonus += clamp(time, 0, 100);
+		time = 0;
+		spawnStore();
 	}
 }
 
+spawnStore = function(){
+	storeOpen = true;
+	instance_create_layer(0,0, "layer_Store", o_store);
+	
+	for(var i = 0; i < array_length(onRoundEndEffects); i++){
+		var effect = onRoundEndEffects[i];
+		effect.effect();
+		effect.duration = effect.duration - 1;
+	}
+	onRoundEndEffects = array_filter(onRoundEndEffects, function(effect){
+		return effect.duration > 0;
+	});
+}
+
 newRound = function(first = false){
-		lastLevelKillTotal = zombiesKilled;
-		var rawKillIncrease = round(10000 * ((10 + 5*level) / 6670));
-		killsToNextLevel = zombiesKilled + clamp(rawKillIncrease, 10, 10000 - zombiesKilled);
-		if(!first){
-			timeBonus += clamp(time, 0, 100);
-		}
-		spawnProduce();
-		time = 150;
+	storeOpen = false;
+	lastLevelKillTotal = zombiesKilled;
+	var rawKillIncrease = round(10000 * ((10 + 5*level) / 6670));
+	killsToNextLevel = 1;// zombiesKilled + clamp(rawKillIncrease, 10, 10000 - zombiesKilled);
+	spawnProduce();
+	time = 150;
+	for(var i = 0; i < array_length(onRoundStartEffects); i++){
+		var effect = onRoundStartEffects[i];
+		effect.effect();
+		effect.duration = effect.duration - 1;
+	}
+	onRoundStartEffects = array_filter(onRoundStartEffects, function(effect){
+		return effect.duration > 0;
+	});
 }
 
 lastProduce = -1;

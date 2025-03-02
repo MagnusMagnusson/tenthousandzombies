@@ -1,5 +1,5 @@
 
-var sped = 1;
+var sped = 1.5;
 
 if(shotDelay > 0){
 	shotDelay--;

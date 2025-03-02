@@ -26,6 +26,8 @@ if(game_active()){
 			var d = abs(x - o_player.x) + abs(y - o_player.y);
 			if(d > 20){
 				mp_potential_step_object(o_player.x, o_player.y, 0.5, o_wall);
+			} else {
+				o_ctrl.hurt(damage);
 			}
 		}
 	}

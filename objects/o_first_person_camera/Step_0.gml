@@ -19,5 +19,5 @@ if(!locked){
 	var dy = -display_mouse_get_y() + (display_get_height() / 2);
 
 	d3d_camera_rotate_around_degrees(dx * 0.9, dy* 0.9);
+	display_mouse_set(display_get_width() / 2, display_get_height() / 2);
 }
-display_mouse_set(display_get_width() / 2, display_get_height() / 2);

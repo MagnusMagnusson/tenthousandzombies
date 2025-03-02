@@ -1,16 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"o_floor",
+  "%Name":"o_store",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_floor",
+  "name":"o_store",
   "overriddenProperties":[],
   "parent":{
-    "name":"enviroment",
-    "path":"folders/Arena/Object/enviroment.yy",
+    "name":"Store",
+    "path":"folders/Store.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_storebackground",
+    "path":"sprites/spr_storebackground/spr_storebackground.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

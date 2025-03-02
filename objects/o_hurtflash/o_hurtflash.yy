@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"o_floor",
+  "%Name":"o_hurtflash",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_floor",
+  "name":"o_hurtflash",
   "overriddenProperties":[],
   "parent":{
-    "name":"enviroment",
-    "path":"folders/Arena/Object/enviroment.yy",
+    "name":"UI",
+    "path":"folders/Arena/UI.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_ui_parent",
+    "path":"objects/o_ui_parent/o_ui_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
