@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ctrl_extrafunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ctrl_extrafunctions",
+  "parent":{
+    "name":"extrascripts",
+    "path":"folders/Arena/Object/controllers/extrascripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

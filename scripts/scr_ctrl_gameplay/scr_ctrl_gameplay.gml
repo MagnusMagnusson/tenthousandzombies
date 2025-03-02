@@ -17,4 +17,10 @@ function ctrl_gameplay(){
 	hurtFlash = 0;
 	paused = false;
 	storeOpen = false;
+	
+	difficultyScaling = [0.5, 0.75, 1, 1.5, 2];
+	modifiers = [];
+	onRoundStartEffects = [];
+	onRoundEndEffects = [];
+
 }
