@@ -5,3 +5,4 @@ with(o_ui_parent){
 }
 
 keyboard_string = "";
+typing = true;

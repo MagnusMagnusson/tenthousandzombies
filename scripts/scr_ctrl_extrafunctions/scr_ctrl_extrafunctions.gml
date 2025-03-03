@@ -47,7 +47,7 @@ killZombie = function(){
 		storeOpen = false;
 		lastLevelKillTotal = zombiesKilled;
 		var rawKillIncrease = round(10000 * ((10 + 5*level) / 6670));
-		killsToNextLevel = 1;// zombiesKilled + clamp(rawKillIncrease, 10, 10000 - zombiesKilled);
+		killsToNextLevel = zombiesKilled + clamp(rawKillIncrease, 10, 10000 - zombiesKilled);
 		spawnProduce();
 		time = 150;
 		for(var i = 0; i < array_length(onRoundStartEffects); i++){
