@@ -1,0 +1,1 @@
+model = ModelManager().get("entities/zombie_ld", true);

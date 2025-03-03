@@ -17,6 +17,12 @@ if(c){
 	show_debug_message("c not found")
 }
 
+if(o_ctrl.hp <= 0){
+	o_camera.locked = true;
+	o_camera.lookat._z *= 1.1;
+	exit;
+}
+
 if(!o_camera.locked){
 	var dx = 0;
 	var dy = 0;

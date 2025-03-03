@@ -1,0 +1,1 @@
+gpu_set_fog(false, c_black, 80, 300);

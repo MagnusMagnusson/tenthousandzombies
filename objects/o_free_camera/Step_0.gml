@@ -1,4 +1,4 @@
-if(!active) exit;
+if(!active || locked) exit;
 
 if(mouse_check_button_pressed(mb_right)){
 	display_mouse_set(display_get_width() / 2, display_get_height() / 2);

@@ -11,15 +11,18 @@ spawnZombie = function(){
 		z.hp = 10 + level/2;
 		z.damage = 10 + level/2;
 		z.sped = 0.5;
+		z.type = 0;
 	} else if (roll < 105 + 3*level) {
 		//Zoombie
 		z.hp = 7 + level/3;
 		z.damage = 5 + level/2.25;
 		z.sped = 1.5;
+		z.type = 1;
 	} else {
 		//Tank
 		z.hp = 15 + level/2;
 		z.damage = 10 + level/1.5;
 		z.sped = 0.2;
+		z.type = 2;
 	}
 }

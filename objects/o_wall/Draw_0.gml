@@ -1,10 +1,6 @@
-draw_self();
-if(!is_undefined(model)){
-	model.draw_ext(
+if(!instance_exists(o_player) || o_player.lookingAt(x,y)){
+	model.draw(
 		x,y,0,
-		0,0,0,
-		10, 10, 5
+		0,0,0,1
 	);
-} else {
-	model = ModelManager().get("cube", false);
 }

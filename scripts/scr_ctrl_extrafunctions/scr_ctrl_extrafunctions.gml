@@ -9,7 +9,8 @@ hurt = function(amount){
 }
 
 getScore = function(){
-	return extraScore + ceil(difficultyScaling[difficulty] * (zombiesKilled * 10 + producePicked + 2*timeBonus + bonusSkips * 200 + 246 * level));
+	show_debug_message(difficulty);
+	return extraScore + ceil(difficultyScaling[difficulty] * (zombiesKilled * 10 + 2*producePicked + timeBonus + bonusSkips * 200 + 246 * level));
 }
 
 killZombie = function(){
@@ -116,6 +117,7 @@ killZombie = function(){
 	}
 	
 	setDifficulty = function(_difficulty){
+		difficulty = _difficulty;
 		switch(_difficulty){
 			case 0 : {
 				hpRegen = 1;
@@ -123,6 +125,7 @@ killZombie = function(){
 				startingWeapon = "Shotgun";
 				difficulty = difficulty;
 				maxHp = max(150, maxHp);
+				hp = maxHp;
 				healingItems = true;
 				break;
 			}
@@ -132,6 +135,7 @@ killZombie = function(){
 				difficulty = difficulty
 				startingWeapon = "Pistol";
 				maxHp = max(100, maxHp);
+				hp = maxHp;
 				healingItems = true;
 				break;
 			}
@@ -141,15 +145,17 @@ killZombie = function(){
 				difficulty = difficulty
 				startingWeapon = "Pistol";
 				maxHp = max(100, maxHp);
+				hp = maxHp;
 				healingItems = true;
 				break;
 			}
 			case 3 : {
 				hpRegen = 0;
-				levelRegen = 1;
+				levelRegen = 0;
 				difficulty = difficulty
 				startingWeapon = "Pistol";
 				maxHp = max(100, maxHp);
+				hp = maxHp;
 				healingItems = true;
 				break;
 			}
@@ -159,6 +165,7 @@ killZombie = function(){
 				difficulty = difficulty
 				startingWeapon = "Shotgun";
 				maxHp = max(200, maxHp);
+				hp = maxHp;
 				healingItems = false;
 				break;
 			}
